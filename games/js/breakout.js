@@ -24,7 +24,6 @@ var gameMessage = "";
 var gameOver = false;
 var bricks = [];
 var done = false;
-var deadBricks = 0;
 var scoreHTML = document.getElementById("score");
 var livesHTML = document.getElementById("lives");
 var messageHTML = document.getElementById("message");
@@ -68,11 +67,6 @@ function collisionDetection() {
                     dy = -dy;
                     b.status = 0;
                     score++;
-                    deadBricks++;
-                    if (deadBricks > 5) {
-                        dx = 4;
-                        dy = -4;
-                    }
                     if (score == brickRowCount * brickColumnCount) {
                         gameMessage = "Winner Winner Chicken Dinner :)!";
                         gameOver = true;

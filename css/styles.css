@@ -1,0 +1,23 @@
+h1, h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c9c9c9;
+}
+#indexText {
+    font-size: 144px;
+}
+button {
+    font-size: 24px;
+    font-family: Arial;
+    border-radius: 12px;
+    background-color: #555555;
+    color: #c9c9c9;
+}
+body {
+    background-color: #35363A;
+}
+canvas {
+    background-color: #35363A;
+}
+#snakeButton, #breakoutButton, #secretGameButton {
+    font-size: 50px;
+}

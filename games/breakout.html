@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+        #game {
+            text-align: center;
+        }
+        p {
+            font-size: 32px;
+        }
+        #restart {
+            margin: 1px;
+        }
+    </style>
+    <script defer src="js/breakout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <button id="home">&nbsp;🏠&nbsp;</button>
+    <div id="game">
+    <p id="score">Score: 0</p>
+    <p id="lives">Lives: 0</p>
+    <canvas id="canvas" width="480" height="320"></canvas>
+    <button id="restart">Restart</button>
+    <p id="message"></p>
+    </div>
+    <script>
+        $("#home").on("click", () => {
+            window.location = "../index.html";
+        });
+        $("#restart").on("click", () => {
+            location.reload();
+        })
+    </script>
+</body>
+</html>

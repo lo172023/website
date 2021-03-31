@@ -7,3 +7,6 @@ $("#breakoutButton").on("click", () => {
 $("#secretGameButton").on("click", () => {
     window.location = "https://youtu.be/dQw4w9WgXcQ";
 });
+$("#tictactoeButton").on("click", () => {
+    window.location = "games/tictactoe.html";
+})

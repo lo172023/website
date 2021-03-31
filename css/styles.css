@@ -18,6 +18,6 @@ body {
 canvas {
     background-color: #35363A;
 }
-#snakeButton, #breakoutButton, #secretGameButton {
-    font-size: 50px;
+#snakeButton, #breakoutButton, #secretGameButton, #tictactoeButton {
+    font-size: 40px;
 }

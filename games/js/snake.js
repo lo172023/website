@@ -77,13 +77,13 @@ function hitWall() {
         snake[0].x = snakeboard.width - 20;
     }
     if (hitRightWall) {
-        snake[0].x = 20;
+        snake[0].x = 0;
     }
     if (hitTopWall) {
         snake[0].y = snakeboard.height - 20;
     }
     if (hitBottomWall) {
-        snake[0].y = 20;
+        snake[0].y = 0;
     }
 }
 

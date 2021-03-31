@@ -43,7 +43,9 @@ function main() {
 
 function clear_board() {
     snakeboard_ctx.fillStyle = board_background;
+    snakeboard_ctx.strokeStyle = "white"
     snakeboard_ctx.fillRect(0, 0, snakeboard.width, snakeboard.height);
+    snakeboard_ctx.strokeRect(0, 0, snakeboard.width, snakeboard.height);
 }
 
 function drawSnake() {
